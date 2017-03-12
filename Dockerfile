@@ -10,6 +10,5 @@ RUN apk add --no-cache --virtual parchment-dependencies git &&\
     rm -rf /usr/share/nginx/html &&\
     ln -sf /parchment /usr/share/nginx/html &&\
     apk del parchment-dependencies
-EXPOSE 80
 VOLUME /parchment/index
 VOLUME /parchment/stories
